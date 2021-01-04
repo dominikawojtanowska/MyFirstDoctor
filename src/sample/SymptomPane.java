@@ -44,7 +44,7 @@ public class SymptomPane extends Pane {
         question.setWrappingWidth(260);
         question.setX(20); question.setY(50);
         question.setTextAlignment(TextAlignment.CENTER);
-        nodes = leaf.getNodes();
+        nodes = (SymptomNode[])leaf.getNodes().toArray();
         for(int i=0 ; i<nodes.length; i++){
             Button button = new Button();
             button.setText(nodes[i].name);

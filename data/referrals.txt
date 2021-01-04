@@ -1,0 +1,18 @@
+Pain;Hearing problems;Dizziness;Acne;Referral
+Ears;Yes;Yes;No:No;Audiologist
+No;Yes;No;No;Audiologist
+Ears;Yes;No;No;Audiologist
+Ears;No;No;No;Audiologist
+Ears;Yes;Yes;No;Audiologist
+No;Yes;No;No;Audiologist
+Ears;Yes;No;Audiologist
+Ears;No;No;No;Audiologist
+No;No;Yes;No;Audiologist
+No;No;No;Yes;Dermatologist
+No;No;No;No;You are healthy as fish!
+Stomach;Yes;Yes;Yes;HOSPITAL
+Stomach;No;No;No;Gastroenterologist
+Stomach;No;Yes;No;Gastroenterologist
+No;No;No;No;You are healthy as fish!
+No;No;No;No;You are healthy as fish!
+No;No;No;No;You are healthy as fish!
