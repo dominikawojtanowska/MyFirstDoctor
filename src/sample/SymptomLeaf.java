@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.ArrayList;
+
 public class SymptomLeaf {
     private String name;
     private SymptomNode parent;
@@ -20,11 +22,9 @@ public class SymptomLeaf {
     public String getName(){
         return name;
     }
-
     public SymptomNode getParent() {
         return parent;
     }
-
     public SymptomNode[] getNodes() {
         return nodes;
     }
