@@ -18,8 +18,8 @@ public class Main extends Application {
         SymptomNode sn1 = new SymptomNode("Yes", symptomLeaf, symptomLeaf1);
         SymptomNode sn2 = new SymptomNode("No", symptomLeaf, symptomLeaf2);
 
-        symptomLeaf.addNodes(new SymptomNode[]{sn1, sn2});
-        symptomLeaf2.addNodes(new SymptomNode[]{sn1});
+        //symptomLeaf.addNodes(new SymptomNode[]{sn1, sn2});
+        //symptomLeaf2.addNodes(new SymptomNode[]{sn1});
 
         MainPane mainPane = new MainPane(primaryStage);
         Scene scene = new Scene(mainPane, 300, 450);

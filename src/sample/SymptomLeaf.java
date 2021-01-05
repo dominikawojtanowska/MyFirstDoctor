@@ -5,18 +5,15 @@ import java.util.ArrayList;
 public class SymptomLeaf {
     private String name;
     private SymptomNode parent;
-    private SymptomNode[] nodes;
+    private ArrayList<SymptomNode> nodes;
     private String question;
     static SymptomLeaf firstLeaf;
 
-    SymptomLeaf(String name, SymptomNode parent, SymptomNode[] nodes){
+    SymptomLeaf(String name, SymptomNode parent, ArrayList<SymptomNode> nodes){
         this.name = name;
         this.parent = parent;
         this.nodes = nodes;
         question = "Is this symptom present: " + name + "?";
-        if(parent == null){
-            firstLeaf = this;
-        }
     }
 
     public String getName(){
@@ -25,14 +22,24 @@ public class SymptomLeaf {
     public SymptomNode getParent() {
         return parent;
     }
-    public SymptomNode[] getNodes() {
+    public ArrayList<SymptomNode> getNodes() {
         return nodes;
     }
     public String getQuestion() {
         return question;
     }
-    public void addNodes(SymptomNode[] nodes){
+    public void addNodes(ArrayList<SymptomNode> nodes){
         this.nodes = nodes;
+    }
+
+    public void addNode(SymptomNode node){
+        if(!nodes.contains(node)){
+            nodes.add(node);
+            node.setParent(this);
+        }
+        else {
+            nodes.get(nodes.indexOf(node)).density++;
+        }
     }
 
 }
